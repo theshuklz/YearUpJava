@@ -21,9 +21,11 @@ public class HomeWork {
      * @return
      */
     public static char[] reverseString(String input){
+        //Emanuel
+        int c = 0;
         char[] out = new char[input.length()];
-        for(int i = 0;i<input.length();i++){
-            out[i] = input.charAt(i);
+        for(int i = input.length()-1;i>=0;i--){
+            out[c++] = input.charAt(i);
         }
         return out;
     }
@@ -84,7 +86,7 @@ public class HomeWork {
 
     public static void main(String[] args) {
 //        HomeWork.generateTable(100);
-        System.out.println(HomeWork.reverseString("Rishi"));
+        System.out.println(HomeWork.reverseString("Emanuel"));
 
     }
 }
