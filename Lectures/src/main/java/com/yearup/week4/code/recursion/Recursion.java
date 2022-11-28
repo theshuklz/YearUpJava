@@ -1,6 +1,5 @@
-package com.yearup.week4;
+package com.yearup.week4.code.recursion;
 
-import com.google.common.base.Stopwatch;
 import com.yearup.ElaspsedTimer;
 
 import java.util.HashMap;
@@ -45,13 +44,16 @@ public class Recursion {
     }
 
     public static void main(String[] args) {
+//                Recursion fib = new Recursion();
+//        System.out.println(fib.recFibonacci(5));
+
         m.put(0L, 0L);
         m.put(1L, 1L);
         Recursion fib = new Recursion();
         ElaspsedTimer timer = new ElaspsedTimer();
 
         timer.start();
-        System.out.println("recFibonacci: "+fib.recFibonacci(50));
+        System.out.println("recFibonacci: "+fib.recFibonacci(10));
         timer.stop("recFibonacci");
 
         timer.start();
@@ -61,7 +63,6 @@ public class Recursion {
         timer.start();
         System.out.println("linFibonacci: "+fib.linFibonacci(50));
         timer.stop("linFibonacci");
-
         timer.start();
         System.out.println("tailFibonacci: "+fib.tailFibonacci(50, 0, 1));
         timer.stop("tailFibonacci");
